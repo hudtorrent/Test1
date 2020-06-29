@@ -14,7 +14,6 @@ y <- b0 + b1*x + e
 ## My own function ##
 
 f.ols <- function(X,y){
-  # X is supposed to have a colunm of ones
   # X is supposed to have a column of ones
   
   y <- as.matrix(y)
