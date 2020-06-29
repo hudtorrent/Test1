@@ -28,3 +28,5 @@ f.ols <- function(X,y){
               "residuals" = eh,
               "SQRes" = sqr))
 }
+
+reg1 <- f.ols(cbind(1,x),y)
