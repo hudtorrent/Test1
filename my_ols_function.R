@@ -21,7 +21,10 @@ f.ols <- function(X,y){
   yh <- X%*%b
   eh <- y - yh
   
+  sqr <- sum(eh^2)
+  
   return(list("coef" = b,
               "fittef" = yh,
-              "residuals" = eh))
+              "residuals" = eh,
+              "SQRes" = sqr))
 }
